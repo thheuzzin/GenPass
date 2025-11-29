@@ -154,6 +154,28 @@ main{
   font-size: 18px;
 }
 
+#comofunciona{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  color: #fff;
+  
+}
+
+#comofunciona h2{
+  font-size: 50px;
+}
+
+#comofunciona p{
+  text-align: center;
+  width: 50%;
+  border: 2px solid #8257E6;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 /*Responsividade */
 
 @media (max-width: 480px){
@@ -216,6 +238,16 @@ footer{
 
 }
 
+#comofunciona p{
+  width: 100%;
+}
+
+#comofunciona h2{
+  text-align: center;
+  white-space: nowrap;
+  font-size: 35px;
+}
+
 }
 
 @media (width: 1024px){
@@ -233,5 +265,10 @@ footer{
 
   .button-active-passaword button{
     font-size: 20px;
+  }
+
+  #comofunciona p{
+    font-size: 22px;
+    width: 80%;
   }
 }
