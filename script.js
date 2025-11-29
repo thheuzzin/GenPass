@@ -1,4 +1,4 @@
-document.getElementById("active-passaword").addEventListener("click", function(){ 
+gedocument.tElementById("active-passaword").addEventListener("click", function(){ 
   
   const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*";
 

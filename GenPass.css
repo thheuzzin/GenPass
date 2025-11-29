@@ -135,6 +135,11 @@ footer{
 
 }
 
+footer a{
+  color: #ffff;
+  text-decoration: none;
+}
+
 main{
   flex: 1;
 }
