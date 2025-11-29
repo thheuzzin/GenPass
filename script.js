@@ -15,7 +15,4 @@ document.getElementById("active-passaword").addEventListener("click", function()
 
 
 
-
-
-
 })
