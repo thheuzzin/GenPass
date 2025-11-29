@@ -138,6 +138,11 @@ footer{
 footer a{
   color: #ffff;
   text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover{
+  color: #5b5b5b;
 }
 
 main{
