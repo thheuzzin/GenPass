@@ -1,0 +1,227 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(135deg, #0D0D0D, #000000, #8257E6);
+  background-size: 600% 600%; /* aumenta o tamanho para dar efeito de movimento */
+  animation: gradientAnimation 10s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo-genpass{
+  color: #fff;
+  font-size: 15px;
+  border: 2px solid #8257E6;
+  padding: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+.logo-genpass span{
+color: #8257E6;
+transition: 0.3s;
+}
+.logo-genpass span:hover{
+  color: #bb00ff;
+  text-shadow: 0 0 15px #bb00ff;
+}
+
+.container-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+  gap: 30px;
+  
+  
+}
+
+.container-center h2 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  
+}
+
+.container-center p{
+  color: #fff;
+  font-size: 13px;
+}
+
+.border-master{
+  background-color: #8257E6;
+}
+
+#active-passaword{
+  border: none;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background-color: #8257E6;
+  color: #fff;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+#active-passaword:hover{
+  background-color: #bb00ff;
+}
+
+.button-active-passaword{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.button-active-passaword p{
+  color: #5b5b5b;
+  white-space: nowrap;
+}
+.texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#view-passaword{
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+  border-radius: 25px;
+  background-color: #393939;
+  text-align: center;
+}
+
+.container-center{
+    width: 90%;
+    max-width: 700px; /* tamanho máximo do card */
+    margin: 0 auto; /* centraliza horizontal */
+    margin-top: 150px; /* afastar do topo */
+    padding: 100px;
+    
+    border-radius: 25px 100px;
+    background-color: #1b1b1b; /* fundo dark */
+    color: #fff;
+}
+
+
+footer{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+
+main{
+  flex: 1;
+}
+
+#view-passaword{
+  color: #fff;
+  font-size: 18px;
+}
+
+/*Responsividade */
+
+@media (max-width: 480px){
+  .container-center h2{
+    font-size: 50px;
+  }
+  .container-center p{
+    text-align: center;
+  }
+
+  .container-center{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 440px) {
+  .container-center h2 {
+    font-size: 40px; /* tamanho padrão mobile */
+    white-space: nowrap;
+    
+  }
+  .container-center p{
+    text-align: center;
+  }
+.container-center{
+    width: 90%;
+    max-width: 1000px; /* tamanho máximo do card */
+    margin: 0 auto; /* centraliza horizontal */
+    margin-top: 70px; /* afastar do topo */
+    padding: 100px;
+    
+}
+
+#view-passaword{
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: #393939;
+  text-align: center;
+}
+#active-passaword{
+  border: none;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background-color: #8257E6;
+  color: #fff;
+  font-weight: bolder;
+  transition: 0.5s;
+  width: 150px;
+  height: 50px;
+}
+
+footer{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+}
+
+@media (width: 1024px){
+  .container-center h2{
+    font-size: 80px;
+  }
+  .container-center p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #view-passaword{
+    font-size: 25px;
+  }
+
+  .button-active-passaword button{
+    font-size: 20px;
+  }
+}
